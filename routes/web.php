@@ -50,11 +50,3 @@ Route::get('/saludador/{name}/{lastname?}','WelcomeUserController@index');
 
 
 //testEando La rama Test
-
-<<<<<<< HEAD
-
-//Teasteando el origin
-
-=======
-//Testeo de rutas usando la rama Test
->>>>>>> Test
