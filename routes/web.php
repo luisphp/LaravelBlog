@@ -48,4 +48,3 @@ Route::get('/saludador/{name}/{lastname?}','WelcomeUserController@index');
 
 //SEgundo commit
 
-
