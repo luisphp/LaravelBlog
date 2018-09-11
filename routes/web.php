@@ -46,7 +46,7 @@ Route::get('/usuarios/nuevo','UserController@create');
 
 Route::get('/saludador/{name}/{lastname?}','WelcomeUserController@index');
 
-//SEgundo commit
+//Segundo commit
 
 //Tercer cambio
 
