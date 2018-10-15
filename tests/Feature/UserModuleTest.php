@@ -18,6 +18,30 @@ class UserModuleTest extends TestCase
        ->assertSee('Todos los Usuarios');
     }
 
+    /** @test*/
+     function carga_lista_usuarios()
+    {
+       $this->withOutExceptionHandling();
+
+        $this->get('/usuarios')
+        ->assertStatus(200)
+       ->assertSee('Todos los Usuarios')
+       ->assertSee('Joel')
+       ->assertSee('Ellie')
+       ->assertSee('Tess')
+       ->assertSee('Notas');
+    }
+
+    /** @test*/
+     function carga_lista_usuarios_if_is_empty()
+    {
+       $this->withOutExceptionHandling();
+
+        $this->get('/usuarios?empty')
+        ->assertStatus(200)
+        ->assertSee('No hay usuarios registrados');
+    }
+
 /** @test*/
     function it_loads_the_users_details_page()
 

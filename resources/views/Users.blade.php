@@ -20,7 +20,7 @@ content ="width-device-width, user-scalable-no, initial-scale=1.0, maximum-scale
 
 <hr>
 
-@if (!empty($usuarios))
+@if (!empty($Users))
 
 
 
@@ -37,6 +37,7 @@ content ="width-device-width, user-scalable-no, initial-scale=1.0, maximum-scale
 </ul>
 
 @else
+
 <p>No hay usuarios registrados</p>
 
 @endif

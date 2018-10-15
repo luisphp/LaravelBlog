@@ -11,11 +11,14 @@ class UserController extends Controller
 
     public function index(){
 
-        if (request()-> has('empty')){
+        if (request()->has('empty')){
 
             $users =[];
         }else{
-            $users = ['Joel', 'Ellie', 'Tess'];
+            $users = ['Joel',
+            'Ellie',
+            'Tess',
+            'Notas'];
         }
 
 
